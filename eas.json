@@ -1,0 +1,36 @@
+{
+  "build": {
+    "preview": {
+      "node": "20.18.0",
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview2": {
+      "node": "20.18.0",
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      }
+    },
+    "preview3": {
+      "node": "20.18.0",
+      "developmentClient": true,
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview4": {
+      "node": "20.18.0",
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "node": "20.18.0",
+      "android": {
+        "buildType": "app-bundle"
+      }
+    }
+  }
+}

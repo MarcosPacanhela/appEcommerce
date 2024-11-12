@@ -4,12 +4,20 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#fff',
-        padding: 20
+    },
+    scrollView: {
+        flex: 1,
+        padding: 20,
+    },
+    scrollContent: {
+        paddingBottom: 80,
     },
     containerButton: {
-        paddingTop: 15,
+        paddingVertical: 15,
         alignItems: 'center',
         backgroundColor: '#fff',
+        borderTopWidth: 1,
+        borderColor: '#ddd',
     },
     buttonContinue: {
         borderWidth: 2,

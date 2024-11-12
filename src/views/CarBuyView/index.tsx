@@ -19,7 +19,7 @@ export default function CarBuyView({ navigation }: any) {
 
     return (
         <View style={styles.container}>
-            <ScrollView showsVerticalScrollIndicator={false}>
+            <ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollContent}>
                 <Text style={styles.title}>Itens no Carrinho</Text>
                 {cartItems.length > 0 ? (
                     cartItems.map((cartItem) => (
@@ -47,16 +47,17 @@ export default function CarBuyView({ navigation }: any) {
                         Seu carrinho está vazio
                     </Text>
                 )}
-
-                <View style={styles.containerButton}>
-                    <TouchableOpacity style={styles.buttonContinue} onPress={navToHome}>
-                        <Text style={styles.textButton}>Continuar comprando</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={styles.buttonFinish} onPress={() => navigation.navigate('finish')}>
-                        <Text style={[styles.textButton, { color: '#fff' }]}>Finalizar compra</Text>
-                    </TouchableOpacity>
-                </View>
             </ScrollView>
+
+            <View style={styles.containerButton}>
+                <TouchableOpacity style={styles.buttonContinue} onPress={navToHome}>
+                    <Text style={styles.textButton}>Continuar comprando</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.buttonFinish} onPress={() => navigation.navigate('finish')}>
+                    <Text style={[styles.textButton, { color: '#fff' }]}>Finalizar compra</Text>
+                </TouchableOpacity>
+            </View>
         </View>
     );
 }
+

@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "appEcommerce",
+    "name": "Paka Gourmet",
     "slug": "appEcommerce",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -16,12 +16,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/pakaLogo.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.pacanhela.pakagourmet"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "64095a23-b697-4cc0-8c3a-bc6128c347a2"
+      }
     }
   }
 }
